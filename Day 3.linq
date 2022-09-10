@@ -40,8 +40,12 @@ var mSyntaxList = Albums
 
 
 var queenAlbums = Albums
-				 .Where(a => a.Artist.Name.Equals("Queen"))
-				 //.Dump()		After the query is run and it works you comment out the dump so it doesnt display the results of each query
+				 .Where(a => a.Artist.Name.Equals("Queen"))						     //.Where is the filter	a is the unique i dentifier a = Artist in this instance. After Lamda it is selecting tables and data to filter through
+				 
+				 //.Dump()		
+//After the query is run and it works you comment out the dump so it doesnt display the results of each query
 				 ;
+				 
+				 
 				 
 				 
