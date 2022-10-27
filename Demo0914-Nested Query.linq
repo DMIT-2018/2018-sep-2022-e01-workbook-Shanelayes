@@ -2,7 +2,6 @@
   <Connection>
     <ID>ef024a3c-6298-4433-8aca-a7b6b4880f43</ID>
     <NamingServiceVersion>2</NamingServiceVersion>
-    <Persist>true</Persist>
     <Server>WC320-07\SQLEXPRESS</Server>
     <AllowDateOnlyTimeOnly>true</AllowDateOnlyTimeOnly>
     <Database>Chinook</Database>
