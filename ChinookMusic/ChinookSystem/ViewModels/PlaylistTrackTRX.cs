@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ChinookSystem.ViewModels
 {
-    internal class PlaylistTrackTRX
-    {
-    }
+	public class PlaylistTrackTRX
+	{
+		public bool SelectedTrack { get; set; }
+		public int TrackId { get; set; }
+		public int TrackNumber { get; set; }
+		public int TrackInput { get; set; }
+	}
 }
