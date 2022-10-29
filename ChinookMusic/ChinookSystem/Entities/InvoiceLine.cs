@@ -10,7 +10,7 @@ namespace ChinookSystem.Entities
 {
     [Index("InvoiceId", Name = "IFK_InvoiceLinesInvoiceId")]
     [Index("TrackId", Name = "IFK_InvoiceLinesTrackId")]
-    public partial class InvoiceLine
+    internal partial class InvoiceLine
     {
         [Key]
         public int InvoiceLineId { get; set; }

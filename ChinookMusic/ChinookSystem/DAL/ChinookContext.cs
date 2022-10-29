@@ -8,7 +8,7 @@ using ChinookSystem.Entities;
 
 namespace ChinookSystem.DAL
 {
-    public partial class ChinookContext : DbContext
+    internal partial class ChinookContext : DbContext
     {
         public ChinookContext()
         {

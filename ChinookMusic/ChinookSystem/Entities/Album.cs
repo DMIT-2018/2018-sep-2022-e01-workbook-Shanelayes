@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ChinookSystem.Entities
 {
     [Index("ArtistId", Name = "IFK_AlbumsArtistId")]
-    public partial class Album
+    internal partial class Album
     {
         public Album()
         {
