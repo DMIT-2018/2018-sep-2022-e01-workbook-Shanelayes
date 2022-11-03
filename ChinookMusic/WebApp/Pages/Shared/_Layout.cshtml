@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] </title>
     
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@AbandonedMutexException.9.8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8"/>
    
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApp.styles.css" asp-append-version="true" />
@@ -16,7 +16,27 @@
         <nav>
             <ul>
                 <li>
+                    <a asp-area="" asp-page="/Index">
+                        <img src="~/img/ChinookMusicMenuLogo.jpg"
+                        alt="menu log"
+                        title="menu"> 
+                    </a>
+                </li>
+                <li>
                     <a asp-area="" asp-page="/Index">Home</a>
+                </li>
+                @*Set up the submenu (drop down menu) using holiday.css 
+                    see holdiaycss.js.org
+                    Start with <li> 
+                        within add a <span> this will be entry into menu root.
+                        add a ul tag. this starts the drop down 
+                        within the ul tag add any number of <li> menu items 
+                *@
+                <li>
+                    <span>Samples</span>
+                    <ul>
+                        <li><a asp-area="" asp-page="/SamplePages/Index.cshtml">Default Sample Pages Home</a></li>
+                    </ul>
                 </li>
                 <li >
                    <a asp-area="" asp-page="/Privacy">Privacy</a>
@@ -28,7 +48,7 @@
         </nav>
     </header>
     <div >
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
