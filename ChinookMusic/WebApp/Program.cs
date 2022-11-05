@@ -2,6 +2,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebApp.Data;
 
+
+#region Additional Namespaces
+using ChinookSystem;
+#endregion
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -26,9 +31,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 //where xx is the connection sstring variable
 //
 
-//builder.Services.ChinookSystemBackendDependencies(options =>
-//              options.UseSqlServer(connectionStringChinook));
+builder.Services.ChinookSystemBackendDependencies(options =>
+              options.UseSqlServer(connectionStringChinook));
 
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 
 
